@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Forever Valentine 💝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="styles1.css"> <!-- Link to external CSS -->
+    <script src="script.js" defer></script> <!-- Link to external JS -->
+</head>
+<body>
+    <div class="floating-emojis"></div>
+    <!-- Surprise Box Container -->
+    <div class="surprise-box" id="surpriseBox">
+        <!-- Container for floating elements -->
+   
+
+        <!-- Cat Animation -->
+        <div class="cat-animation" id="catAnimation">
+            <img src="images/cat.png" alt="Cute Cat" class="cat">
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- Box Layers -->
+        <div class="box-layer" id="layer1">
+            <div class="message-box">
+                <h1>Meow! 🐾</h1>
+                <p>Heyy Sovvu, I’m here to deliver a really special surprise for you! Click the box to open it and see what’s inside!</p>
+                <button class="open-box-btn" id="openBoxBtn">Open the Box 🎁</button>
+            </div>
+        </div>
+
+        <div class="box-layer hidden" id="layer2">
+            <div class="message-box">
+                <h1>You Found Layer 1! 🌸</h1>
+                <p>This is just the beginning but ends very soon too! Chalo deeper into the box to find more surprises!</p>
+                <button class="next-layer-btn" id="nextLayerBtn1">Next Layer ➡️</button>
+            </div>
+        </div>
+
+        <div class="box-layer hidden" id="layer3">
+            <div class="message-box">
+                <h1>Timeline of Us 📅</h1>
+                <p>Let’s take a trip down memory wali gali! Here's some of my favorite moments together:</p>
+                <div class="timeline">
+                    <div class="timeline-event">
+                        <h3>First Insta Live 🌟</h3>
+                        <p>Remember when I just sang baby shark so randomly? That was literally the start of everything!</p>
+                    </div>
+                    <div class="timeline-event">
+                        <h3>Our First Game Time Together 👌</h3>
+                        <p>That time we were playing sky and you were screaming or I dunno cause of me not scared of the black dragons... I knew it all would be fun!</p>
+                    </div>
+                </div>
+                <button class="next-layer-btn" id="nextLayerBtn2">Next Layer ➡️</button>
+            </div>
+        </div>
+
+                <!-- Layer 4: Love Meter -->
+<div class="box-layer hidden" id="layer4">
+    <div class="message-box">
+        <h1>Our Love Meter 💖</h1>
+        <p>Chal tap tap the button to fill up our love meter! Let’s see how much love we’ve shared!</p>
+        <div class="love-meter">
+            <div class="meter-bar" id="meterBar"></div>
+        </div>
+        <button class="hold-btn" id="holdLoveMeterBtn">Hold to Fill 💕</button>
+        <button class="next-layer-btn" id="nextLayerBtn3" disabled>Next Layer ➡️</button>
+    </div>
+</div>
+
+<!-- Layer 5: Virtual Rose -->
+<div class="box-layer hidden" id="layer5">
+    <div class="message-box">
+        <h1>A Rose for You 🌹</h1>
+        <p>Tap the button 5 times to make the rose bloom. It’s just like our love—patient and beautiful! (Thoda ganda dikh raha but thats cause of meee as the ganda)</p>
+        <div class="rose-container">
+            <img src="images/rose-bud.png" alt="Rose Bud" class="rose-bud" id="roseBud">
+            <img src="images/rose-bloom.png" alt="Rose Bloom" class="rose-bloom hidden" id="roseBloom">
+        </div>
+        <button class="hold-btn" id="holdRoseBtn">Tap to Bloom 🌹</button>
+        <button class="next-layer-btn" id="nextLayerBtn4" disabled>Next Layer ➡️</button>
+    </div>
+</div>
+        
+                <!-- Layer 6: Reasons I Love You -->
+                <div class="box-layer hidden" id="layer6">
+                    <div class="message-box">
+                        <h1>Reasons I Love You 💕</h1>
+                        <p>Here’s an infinite list of reasons why I adore you! Keep scrolling to see more.</p>
+                        <div class="reasons-list" id="reasonsList">
+                            <p>1. Your smile lights up my world 🌟</p>
+            <p>2. The way you find my jokes unfunny 😂</p>
+            <p>3. How you make even the ordinary moments magical ✨</p>
+            <p>4. Your kindness to me 💖</p>
+            <p>5. The way you sound better than mc stan</p>
+            <p>6. Your beautiful eyes that I could get lost in forever 👀</p>
+            <p>7. How you always know how to bully me  🥰</p>
+            <p>8. Your passion for flirting with the ladies</p>
+            <p>9. The way you makeout with girls</p>
+            <p>10. Your ability to make me feel loved every single day 💕</p>
+            <p>11. Your strength and resilience in tough times ghanta behen ji but yes 💪</p>
+            <p>12. The way you skipped meals so i can scold you</p>
+            <p>13. Your love for kala kapda and kala jadu</p>
+            <p>14. How you always smell amazing apparently since its known by all👃💐</p>
+            <p>15. Your voice, which is my favorite sound 🎶</p>
+            <p>16. The way you snore soundedly that i ran from your basement</p>
+            <p>17. Your intelligence and how you always teach me something new 🧠</p>
+            <p>18. The way you pulled my hairs and kissed me(yes behen ji aise hi bol raha hu kuch bhi)</p>
+            <p>19. Your love for billiya 🍕</p>
+            <p>20. How you make me feel like the luckiest person alive 🍀</p>
+            <p>21. Your sense of style that always turns heads 👗</p>
+            <p>22. The way you take potos and send me without me asking</p>
+            <p>23. Your ability to make even the mundane exciting 🎢</p>
+            <p>24. Itna zyada nahi bolunga bye bye</p>
+                        </div>
+                        <button class="next-layer-btn" id="nextLayerBtn5">Next Layer ➡️</button>
+                    </div>
+                </div>
+        
+                <!-- Layer 7: Virtual Kiss Button -->
+                <div class="box-layer hidden" id="layer7">
+                    <div class="message-box">
+                        <h1>Send Me a Kiss 💋</h1>
+                        <p>Click the button below to send me a virtual kiss! I’ll cherish it forever.</p>
+                        <button class="kiss-btn" id="kissBtn">Send a Kiss 💋</button>
+                        <div class="kiss-marks" id="kissMarks"></div>
+                        <button class="next-layer-btn" id="nextLayerBtn6">Next Layer ➡️</button>
+                    </div>
+                </div>
+                <!-- Layer 8: Final Proposal -->
+                <div class="box-layer hidden" id="layer8">
+                    <div class="message-box">
+                        <h1>Will You Be My Valentine? 💝</h1>
+                        <p>My Cutie in Dhoti,</p>
+                    <p>From the moment I saw you, my heart did a little boomerang and never came back! You're the sprinkle to my cupcake , the peanut butter to my jelly (i dont like it), and the cutest koala to my eucalyptus tree!</p>
+            <p>(No bola to ruk aajka dinner cancel)</p>
+                        <p>You’re the most amazing person I’ve ever met. Every moment with you feels like a dream. Will you make me the happiest person and be my forever Valentine?</p>
+                        <div class="buttons">
+                            <button id="yesBtn">YES! A Thousand Times Yesss!!! 🎉</button>
+                            <button id="noBtn">Hmm... Maybe Later? 🙈</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Celebration Section -->
+    <div id="celebration" class="hidden">
+        <h1 id="finalMessage">YIPPEEEEE!!! 🥳💐<br>You've Made Me the Happiest Human! 💃<br>I Love You to the Moon and Back! 🌙🚀</h1>
+        <audio id="celebrationsong" src="https://assets.mixkit.co/active_storage/sfx/2579/2579-preview.mp3"></audio>
+    </div>
+</body>
+</html>
